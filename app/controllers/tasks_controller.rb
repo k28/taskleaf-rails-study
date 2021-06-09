@@ -4,6 +4,8 @@ class TasksController < ApplicationController
   end
 
   def show
+    # リクエストURLにidパラメータで表示するタスクのidが指定される
+    @task = Task.find(params[:id])
   end
 
   def new
